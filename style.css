@@ -1,1 +1,54 @@
 @charset "UTF-8";
+
+/* BRASKPOINTS */
+
+/* smartphone Portrait */
+
+    body {
+        background-color: rgb(92, 92, 92)
+    };
+
+/* smartphone Landscape */
+@media (min-width: 576px){
+    body {
+        background-color: rgb(138, 25, 243);
+        color: rgb(238, 238, 238);
+    }
+
+}
+
+/* Tablet Portrait */
+@media (min-width: 768px){
+    body {
+        background-color: rgb(226, 43, 73);
+        color: rgb(247, 247, 247);
+    }
+    
+}
+
+/* Tablet Landscape */
+@media (min-width: 992px){
+    body {
+        background-color: rgba(58, 238, 34, 0.904);
+        color: rgb(63, 63, 63);
+    }
+    
+}
+
+/* Pc e Notebook */
+@media (min-width: 1200px){
+    body {
+        background-color: rgb(43, 122, 226);
+        color: rgb(63, 63, 63);
+    }
+    
+}
+
+/* Telas FullHD , 4K e Smart TV */
+@media (min-width: 1400px){
+    body {
+        background-color: rgb(51, 51, 51);
+        color: rgb(228, 228, 228);
+    }
+    
+}
