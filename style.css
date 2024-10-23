@@ -1,54 +1,101 @@
 @charset "UTF-8";
+/* importação de font */ 
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* BRASKPOINTS */
+/* CSS Reset - não levando o chome como referencia. */
+* {
+    margin:0;
+    padding:0;
+    border:0;
+}
 
-/* smartphone Portrait */
+
+body {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1em; /* Tamanho defalt*/
+}
+
+/* Centraliza o bloco */
+.container {
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+    header {
+        height: 75px;
+        background-color: rgba(11, 97, 172, 0.87);
+        /* Sombra na header */
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    }
 
     body {
         background-color: rgb(92, 92, 92)
-    };
+    }
 
-/* smartphone Landscape */
+    /* BRASKPOINTS */
+/* smartphone Portrait -------------------------------------- */
+    @media (min-width: 0px){
+   /* Cabeçalho */
+    #logo img {
+        width: 120px;
+        height: 116px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+}
+
+/* smartphone Landscape -------------------------------------- */
 @media (min-width: 576px){
-    body {
-        background-color: rgb(138, 25, 243);
-        color: rgb(238, 238, 238);
+/* Cabeçalho */
+    #logo img {
+        margin: 10px 0px 0px 0px;
+    }
+    .container {
+        max-width: 540px;
     }
 
 }
-
-/* Tablet Portrait */
+/* Tablet Portrait -------------------------------------- */
 @media (min-width: 768px){
-    body {
-        background-color: rgb(226, 43, 73);
-        color: rgb(247, 247, 247);
+/* Cabeçalho */
+    .container {
+        max-width: 720px;
     }
+    header{
+        height: 90px;
+    }
+#logo img {
+    width: 150px;
+    height: 143px;
+}
     
 }
 
-/* Tablet Landscape */
+/* Tablet Landscape -------------------------------------- */
 @media (min-width: 992px){
-    body {
-        background-color: rgba(58, 238, 34, 0.904);
-        color: rgb(63, 63, 63);
+/* Cabeçalho */
+    .container {
+        max-width: 960px;
     }
-    
 }
 
-/* Pc e Notebook */
+/* Pc e Notebook -------------------------------------- */ 
 @media (min-width: 1200px){
-    body {
-        background-color: rgb(43, 122, 226);
-        color: rgb(63, 63, 63);
+/* Cabeçalho */
+    .container {
+        max-width: 1140px;
     }
-    
+    #logo img {
+        width: 180px;
+        height: 173px;
+    }
 }
 
 /* Telas FullHD , 4K e Smart TV */
 @media (min-width: 1400px){
-    body {
-        background-color: rgb(51, 51, 51);
-        color: rgb(228, 228, 228);
+   
+    .container {
+        max-width: 1360px;
     }
     
 }
