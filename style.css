@@ -2,6 +2,16 @@
 /* importação de font */ 
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Variavel */
+:root {
+
+    --azul: rgba(11, 97, 172, 0.87);
+    --cinza: #5c5c5c;
+    --branco: rgb(212, 212, 212);
+    --branco2: #E6EAEB;
+}
+
+
 /* CSS Reset - não levando o chome como referencia. */
 * {
     margin:0;
@@ -18,30 +28,112 @@ body {
 /* Centraliza o bloco */
 .container {
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 }
-
-/* Cabeçalho */
-    header {
-        height: 75px;
-        background-color: rgba(11, 97, 172, 0.87);
-        /* Sombra na header */
-        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
-    }
 
     body {
         background-color: rgb(92, 92, 92)
     }
 
+    .botao {
+        text-decoration: none;
+        color: var(--branco);
+        background-color: var(--azul);
+        width: 100px;
+        padding: 9px 0px;
+        border: 2px solid var(--branco2);
+        border-radius: 20px;
+        align-self: center;
+        margin-top: 5px;
+    }
     /* BRASKPOINTS */
 /* smartphone Portrait -------------------------------------- */
     @media (min-width: 0px){
+    
    /* Cabeçalho */
     #logo img {
-        width: 120px;
-        height: 116px;
-        margin-top: 10px;
+        width: 110px;
+        height: 106px;
+        margin-top: 6px;
         margin-left: 10px;
     }
+
+        /* Banner */
+        main {
+            height: 55vh;
+            background: url(img/banner.jpeg);
+            background-size: cover;
+            background-position: 42%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        main h1, h2 {
+            color: #E6EAEB;
+            text-shadow: rgba(0, 0, 0, 0.603) 0.10em 0.1em 0.1em; 
+            height: 38px;
+        }
+        main h1 {
+            font-size: 200%;
+            margin-top: 140px;
+        }
+        main h2 {
+            font-size: 140%;
+        }
+    /* Cabeçalho */
+    header {
+        height: 65px;
+       /* background-color:  rgba(11, 97, 172, 0.87); */
+        /* Sombra na header */
+       /* box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3); */
+    }
+
+    /* Menu */
+    #check {
+        display:none;
+    }
+    /* Efeito de deslizar o menu 
+    Se o check estiver checked - Criar um estilo para ul */
+    #check:checked~ul {
+        right: 0%;
+    }
+
+    label {
+        height: 3rm;
+        position: fixed;
+        top: 7px;
+        right: 10px;
+    }
+
+    /* 100 vh -- 100% da altura de tela */
+    nav ul {
+        height: 100vh;
+        background-color: rgba(36, 35, 35, 0.726);
+        list-style: none;  /* Remove as bolinhas */
+        width: 60%;
+        top: 75px;
+        right: -65%;
+        position: fixed;
+        transition: all 0.7s;
+    }
+
+    nav ul li{
+        color: rgb(212, 212, 212);
+        font-size: 20px;
+        padding: 8px 15px;
+        border-bottom: 1px solid var(--branco);
+        text-align: right;
+    }
+
+    nav ul li a {
+        color: var(--branco);
+        /* Remover sublinhado */
+        text-decoration: none; 
+    }
+
 }
 
 /* smartphone Landscape -------------------------------------- */
@@ -52,6 +144,14 @@ body {
     }
     .container {
         max-width: 540px;
+    }
+    nav ul {
+        width: 45%;
+    }
+    main {
+        height: 75vh;
+        background-size: cover;
+        background-position: 42%;
     }
 
 }
@@ -68,6 +168,16 @@ body {
     width: 150px;
     height: 143px;
 }
+nav ul {
+    top: 90px;
+    width: 45%;
+}
+label {
+    height: 4rm;
+    position: fixed;
+    top: 20px;
+    right: 15px;
+}
     
 }
 
@@ -76,6 +186,9 @@ body {
 /* Cabeçalho */
     .container {
         max-width: 960px;
+    }
+    nav ul {
+        top: 90px;
     }
 }
 
@@ -89,6 +202,34 @@ body {
         width: 180px;
         height: 173px;
     }
+    nav ul li{
+        color: rgb(212, 212, 212);
+        font-size: 20px;
+        padding: 34px 15px;
+        border-bottom: 1px solid var(--branco);
+        text-align: right;
+    }
+
+    /* Transformação do menu */
+    label{
+        display: none;
+    }
+    nav ul {
+        width: 100%;
+        height: auto;
+        position: static;
+        /* Remover a cor do backgrond */
+        background-color: transparent; 
+    }
+    nav ul li {
+        float: left;
+        border: 0;
+    }
+    
+    nav ul li a:hover {
+        color: #80caff
+    }
+
 }
 
 /* Telas FullHD , 4K e Smart TV */
