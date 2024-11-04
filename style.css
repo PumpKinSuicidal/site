@@ -193,7 +193,7 @@ nav ul {
     width: 45%;
 }
 label {
-    height: 4rem;
+    height: 4m;
     position: fixed;
     top: 20px;
     right: 15px;
@@ -258,6 +258,11 @@ main .botao {
         padding: 34px 15px;
         border-bottom: 1px solid var(--branco);
         text-align: right;
+    }
+    #nome img {
+        width: 270px;
+        margin-top: 22px;
+        margin-left: 330px;
     }
 
     /* Transformação do menu */
