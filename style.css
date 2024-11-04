@@ -64,6 +64,10 @@ body {
         margin-right: 70px;
     }
 
+    nav label img {
+        height: 65px
+    }
+
 
         /* Banner */
         main {
