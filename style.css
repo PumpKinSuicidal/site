@@ -67,14 +67,14 @@ body {
     nav label img {
         height: 65px
     }
-    
+
  /* Cabeçalho */
     header {
         height: 76px;
         background-color:  rgba(11, 97, 172, 0.87); 
         
         /* Sombra na header */
-        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.404); 
+        box-shadow:10px 10px 10px rgba(0, 0, 0, 0.445); 
     }
         /* Banner */
         main {
