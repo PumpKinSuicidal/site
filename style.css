@@ -67,8 +67,15 @@ body {
     nav label img {
         height: 65px
     }
-
-
+    
+ /* Cabeçalho */
+    header {
+        height: 76px;
+        background-color:  rgba(11, 97, 172, 0.87); 
+        
+        /* Sombra na header */
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.404); 
+    }
         /* Banner */
         main {
             height: 55vh;
@@ -83,11 +90,11 @@ body {
 
         main h2 {
             color: #E6EAEB;
-            text-shadow: rgba(0, 0, 0, 0.603) 0.10em 0.1em 0.1em; 
+            text-shadow: rgba(0, 0, 0, 0.603) 0.15em 0.1em 0.1em; 
             height: 38px;
             font-size: 140%;
             margin-top: 210px;
-            background: #0c0c0c85;
+            /* background: #0c0c0c85; */
             height: 35px;
             width: 320px;
             align-self: center;
@@ -95,13 +102,6 @@ body {
         main .botao {
             margin-top: 10px;
         }
-    /* Cabeçalho */
-    header {
-        height: 76px;
-        background-color:  rgba(11, 97, 172, 0.87); 
-        /* Sombra na header */
-       /* box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3); */
-    }
 
     /* Menu */
     #check {
