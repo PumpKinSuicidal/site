@@ -146,8 +146,50 @@ body {
         text-decoration: none; 
     }
 
+#destaque {
+    background: url(img/chuva.png);
+    background-size: cover;
+    background-attachment: fixed ;
+    padding: 50px 15px;
+}
+#textodestaque {
+    color: rgb(22, 22, 22);
+}
+#textodestaque h2 {
+    margin-bottom: 10px;
 }
 
+/* O sinal > é referente ao elemento imadiato */
+
+#textodestaque>p {
+    margin-bottom: 6px;
+}
+.topicos {
+    display: flex;
+    align-items: center;
+}
+
+    .topicos img {
+        margin-right: 7px ;
+    }
+/* organizando o container apos o destaque, o destino é aplicado apenas ao container da seção de destaque */
+#destaque .container{
+    flex-direction: column;
+    align-items: center;
+}
+#textodestaque {
+    color: #eeeeee;
+    text-shadow: rgba(0, 0, 0, 0.603) 0.15em 0.1em 0.1em;
+}
+/* #imagemdestaque img {
+    width: 200px;
+    height: 200px;
+    // arredondar imagens 
+    border-radios: 50%
+}
+} */
+
+}
 /* smartphone Landscape -------------------------------------- */
 @media (min-width: 576px){
 /* Cabeçalho */
@@ -161,7 +203,7 @@ body {
         width: 45%;
     }
     main {
-        height: 75vh;
+        height: 80vh;
         background-size: cover;
         background-position: 42%;
     }
@@ -174,7 +216,23 @@ body {
         margin-top: 5px;
     }
 
+#destaque {
+    background: url(img/rain.png);
+    background-size: cover;
+    background-position: -15px;
+    padding: 60px 15px;
 }
+#textodestaque {
+    color: #eeeeee;
+    margin-left: 220px;
+    font-size: 20px;
+    text-shadow: rgba(0, 0, 0, 0.603) 0.15em 0.1em 0.1em;
+}
+}
+/* #destaque {
+    background-attachment: fixed ;
+} */
+
 /* Tablet Portrait -------------------------------------- */
 @media (min-width: 768px){
 /* Cabeçalho */
@@ -217,6 +275,13 @@ main .botao {
     margin-top: 22px;
     margin-right: 110px;
 }
+#destaque {
+    background-position: -25px;
+    padding: 100px 15px;
+}
+#textodestaque {
+    margin-left: 230px;
+}
     
 }
 
@@ -240,6 +305,15 @@ main .botao {
         margin-top: 22px;
         margin-right: 120px;
     }
+    #destaque {
+        background: url(img/gatoroboto.png);
+        background-size: cover;
+        padding: 60px 15px;
+    }
+    #textodestaque {
+        margin-left: 440px;
+        margin-bottom: 20px;
+    }
 }
 
 /* Pc e Notebook -------------------------------------- */ 
@@ -253,7 +327,7 @@ main .botao {
         height: 173px;
     }
     nav ul li{
-        color: rgb(212, 212, 212);
+        color: rgb(240, 240, 240);
         font-size: 20px;
         padding: 34px 15px;
         border-bottom: 1px solid var(--branco);
@@ -263,6 +337,9 @@ main .botao {
         width: 270px;
         margin-top: 22px;
         margin-left: 330px;
+    }
+    .botao {
+        font-size: 25px;
     }
 
     /* Transformação do menu */
@@ -283,6 +360,13 @@ main .botao {
     
     nav ul li a:hover {
         color: #80caff
+    }
+    #textodestaque {
+        margin-left: 540px;
+        margin-top: 20px;
+    }
+    #textodestaque>p {
+        margin-bottom: 10px;
     }
 
 }
