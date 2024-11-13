@@ -149,11 +149,13 @@ body {
 #destaque {
     background: url(img/chuva.png);
     background-size: cover;
-    background-attachment: fixed ;
+    background-position: -44px;
     padding: 50px 15px;
 }
 #textodestaque {
     color: rgb(22, 22, 22);
+    margin-top: -40px;
+    font-size: 14px;
 }
 #textodestaque h2 {
     margin-bottom: 10px;
@@ -224,7 +226,7 @@ body {
 }
 #textodestaque {
     color: #eeeeee;
-    margin-left: 220px;
+    margin-left: 200px;
     font-size: 20px;
     text-shadow: rgba(0, 0, 0, 0.603) 0.15em 0.1em 0.1em;
 }
