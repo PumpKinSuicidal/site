@@ -209,10 +209,13 @@ body {
 }
 #sobre p {
     margin-left: 10px;
-    margin-right: 30%;
+    margin-right: 20%;
 }
-
-
+#video iframe {
+    margin-top: 4%;
+    width: 280px;
+    height: 157.5px;
+}
 }
 /* smartphone Landscape -------------------------------------- */
 @media (min-width: 576px){
@@ -251,6 +254,9 @@ body {
     bottom: 24px;
     font-size: 15px;
     text-shadow: rgba(0, 0, 0, 0.603) 0.15em 0.1em 0.1em;
+}
+#video iframe {
+    margin-top: 4%;
 }
 }
 /* #destaque {
@@ -307,7 +313,11 @@ main .botao {
     bottom: 60px;
     font-size: 17px;
 }
-    
+#video iframe {
+    margin-top: 4%;
+    width: 560px;
+    height: 315px;
+}
 }
 
 /* Tablet Landscape -------------------------------------- */
