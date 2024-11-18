@@ -147,15 +147,20 @@ body {
     }
 
 #destaque {
-    background: url(img/chuva.png);
+    background: url(img/gatoroboto_celular.png);
     background-size: cover;
-    background-position: -44px;
-    padding: 50px 15px;
+    padding: 210px 25px;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
 }
 #textodestaque {
     color: rgb(22, 22, 22);
-    margin-top: -40px;
-    font-size: 14px;
+    position: absolute;
+    bottom: 30px;
+    left: 25px;
+    right: 25px;
+    font-size: 15px;
 }
 #textodestaque h2 {
     margin-bottom: 10px;
@@ -219,15 +224,15 @@ body {
     }
 
 #destaque {
-    background: url(img/rain.png);
+    background: url(img/gatoroboto.png);
     background-size: cover;
-    background-position: -15px;
-    padding: 60px 15px;
+    padding: 120px 15px;
 }
 #textodestaque {
     color: #eeeeee;
-    margin-left: 200px;
-    font-size: 20px;
+    margin-left: 300px;
+    bottom: 24px;
+    font-size: 15px;
     text-shadow: rgba(0, 0, 0, 0.603) 0.15em 0.1em 0.1em;
 }
 }
@@ -278,11 +283,12 @@ main .botao {
     margin-right: 110px;
 }
 #destaque {
-    background-position: -25px;
-    padding: 100px 15px;
+    padding: 150px 15px;
 }
 #textodestaque {
-    margin-left: 230px;
+    margin-left: 370px;
+    bottom: 60px;
+    font-size: 17px;
 }
     
 }
@@ -308,13 +314,16 @@ main .botao {
         margin-right: 120px;
     }
     #destaque {
-        background: url(img/gatoroboto.png);
         background-size: cover;
-        padding: 60px 15px;
+        padding: 160px 15px;
     }
     #textodestaque {
-        margin-left: 440px;
+        margin-left: 420px;
         margin-bottom: 20px;
+        font-size: 18px;
+    }
+    #sobre {
+        background-color: #464646;
     }
 }
 
@@ -363,9 +372,13 @@ main .botao {
     nav ul li a:hover {
         color: #80caff
     }
+    #destaque {
+        background-size: cover;
+        padding: 200px 15px;
+    }
     #textodestaque {
         margin-left: 540px;
-        margin-top: 20px;
+        bottom: 75px;
     }
     #textodestaque>p {
         margin-bottom: 10px;
