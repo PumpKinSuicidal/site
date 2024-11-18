@@ -196,6 +196,23 @@ body {
 }
 } */
 
+#sobre {
+    background-image: url(img/fundo_steam.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #eeeeee;
+    padding: 30px;
+}
+#sobre h2 {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+#sobre p {
+    margin-left: 10px;
+    margin-right: 30%;
+}
+
+
 }
 /* smartphone Landscape -------------------------------------- */
 @media (min-width: 576px){
@@ -321,9 +338,6 @@ main .botao {
         margin-left: 420px;
         margin-bottom: 20px;
         font-size: 18px;
-    }
-    #sobre {
-        background-color: #464646;
     }
 }
 
