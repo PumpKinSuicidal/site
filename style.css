@@ -421,6 +421,11 @@ main .botao {
     #textodestaque>p {
         margin-bottom: 10px;
     }
+    #video iframe {
+        margin-top: 4%;
+        width: 660px;
+        height: 375px;
+    }
 
 }
 
