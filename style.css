@@ -232,6 +232,10 @@ header {
 #faixaDestaque {
     height: 13rem;
     background-color: #181818;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 }
 /* smartphone Landscape -------------------------------------- */
