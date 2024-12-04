@@ -19,6 +19,15 @@
     border:0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+#topo {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
 
 body {
     font-family: "Noto Sans", sans-serif;
@@ -305,6 +314,29 @@ header {
     justify-content: center;
 } 
 
+#contato {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 20px 0px;
+    background-color: #343538;
+    font-size: 0.775em;
+    color: #fff;
+    text-align: center;
+}
+
+#contato img {
+    padding: 2px 2px;
+}
+
+#contato p {
+    margin-top: 10px;
+}
+  
+footer a {
+    text-decoration: none;
+    color: #fff;
+  }
+
 }
 /* smartphone Landscape -------------------------------------- */
 @media (min-width: 576px){
@@ -353,6 +385,22 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+
+#contato {
+    flex-direction: row;
+    font-size: 0.875em;
+    justify-content: center;
+}
+
+#contato img {
+    padding: 2px 2px;
+}
+
+#contato p {
+    margin-top: 8%;
+    margin-right: 10px;
+}
+
 }
 /* #destaque {
     background-attachment: fixed ;
